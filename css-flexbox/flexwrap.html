@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayFlex</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .conteiner{
+            display: flex;
+            max-width: 500px;
+            border: 1px solid black;
+        }
+
+        .no-wrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+
+        .item{
+            background-color: rgb(255, 115, 0);
+            margin: 5px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 2em;
+        }
+
+        h2{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Direction</h1>
+    <h2>flex-wrap: no-wrap;</h2>
+    <!--Valor padrão, não fazendo a quebra de linha dos itens, mesmo que eles ultrapassem o limite do conteiner-->
+    <section class="conteiner no-wrap">
+        <div class="item">ExemploItem0001</div>
+        <div class="item">ExemploItem0002</div>
+        <div class="item">ExemploItem0003</div>
+    </section>
+
+    <h2>flex-wrap: wrap;</h2>
+    <!--Se os itens utrapassarem o limite do conteiner, vão quebar de linha. Ou seja, um abaixo do outro-->
+    <section class="conteiner wrap">
+        <div class="item">ExemploItem0001</div>
+        <div class="item">ExemploItem0002</div>
+        <div class="item">ExemploItem0003</div>
+    </section>
+
+    <h2>flex-wrap: wrap-reverse;</h2>
+    <!--Mesma coisa do wrap, só que em ordem invertida-->
+    <section class="conteiner wrap-reverse">
+        <div class="item">ExemploItem0001</div>
+        <div class="item">ExemploItem0002</div>
+        <div class="item">ExemploItem0003</div>
+    </section>
+</body>
+</html>

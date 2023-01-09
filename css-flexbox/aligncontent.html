@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayFlex</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .conteiner{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 400px;
+            border: 1px solid black;
+            height: 200px;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .start{
+            align-content: flex-start;
+        }
+
+        .end{
+            align-content: flex-end;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+
+        .around{
+            align-content: space-around;
+        }
+
+        .item{
+            background-color: rgb(255, 115, 0);
+            margin: 5px;
+            font-size: 1.5em;
+            text-align: center;
+            flex: 1;
+        }
+
+        h1{
+            font-size: 2em;
+        }
+
+        h2{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align Content</h1>
+    <h2>align-content: stretch;</h2>
+    <!--Esse é o valor padrão, faz com que os itens flex cresçam igualmente, verticalmente -->
+    <section class="conteiner stretch">
+        <div class="item">Item De 1 adicionado agora</div>
+        <div class="item">Item De 2</div>
+        <div class="item">Item De 3 adiconado</div>
+        <div class="item">Item De 4</div>
+        <div class="item">Item De 5</div>
+        <div class="item">Item De 6</div>
+        <div class="item">Item De 7</div>
+    </section>
+
+    <h2>align-content: flex-start;</h2>
+    <!--Alinha os itens no inicio, verticalmente-->
+    <section class="conteiner start">
+        <div class="item">Item De 1</div>
+        <div class="item">Item De 2 adicionado agora</div>
+        <div class="item">Item De 3 adiconado</div>
+        <div class="item">Item De 4</div>
+        <div class="item">Item De 5</div>
+        <div class="item">Item De 6</div>
+        <div class="item">Item De 7</div>
+    </section>
+
+    <h2>align-content: flex-end;</h2>
+    <!--Alinha os itens ao final, verticalmente-->
+    <section class="conteiner end">
+        <div class="item">Item De 1</div>
+        <div class="item">Item De 2</div>
+        <div class="item">Item De 3 adiconado</div>
+        <div class="item">Item De 4</div>
+        <div class="item">Item De 5</div>
+        <div class="item">Item De 6</div>
+        <div class="item">Item De 7</div>
+    </section>
+
+    <h2>align-content: center;</h2>
+        <!--Alinha os itens verticalmente ao centro, verticalmente-->
+    <section class="conteiner center">
+        <div class="item">Item De 1</div>
+        <div class="item">Item De 2</div>
+        <div class="item">Item De 3 adiconado</div>
+        <div class="item">Item De 4</div>
+        <div class="item">Item De 5</div>
+        <div class="item">Item De 6</div>
+        <div class="item">Item De 7</div>
+    </section>
+
+    <h2>align-content: space-between;</h2>
+    <!--Cria um espaçamento igual entre as linhas. Mantendo a primeira grudada no topo e a última no bottom-->
+<section class="conteiner between">
+    <div class="item">Item De 1</div>
+    <div class="item item2">Item De 2</div>
+    <div class="item">Item De 3 adiconado</div>
+    <div class="item">Item De 4</div>
+    <div class="item">Item De 5</div>
+    <div class="item">Item De 6</div>
+    <div class="item">Item De 7</div>
+</section>
+
+<h2>align-content: space-around;</h2>
+<!--Cria um espaçamento igual entre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e bottom.-->
+<section class="conteiner around">
+<div class="item">Item De 1</div>
+<div class="item item2">Item De 2</div>
+<div class="item">Item De 3 adiconado</div>
+<div class="item">Item De 4</div>
+<div class="item">Item De 5</div>
+<div class="item">Item De 6</div>
+<div class="item">Item De 7</div>
+</section>
+
+</body>
+</html>
