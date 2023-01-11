@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayFlex</title>
+    <style>
+        *{
+            font-family: monospace;
+        }
+
+        .order1{
+            order: 5;
+        }
+
+        .order2{
+            order: 4;
+        }
+
+        .order3{
+            order: 1;
+        }
+
+        .order4{
+            order: 3;
+        }
+
+        .order5{
+            order: 2;
+        }
+
+        .item{
+            background-color: rgb(255, 115, 0);
+            margin: 5px;
+            font-size: 1.3em;
+            padding: 5px 0px;
+            flex: 1;
+        }
+
+        .conteiner{
+            display: flex;
+            max-width: 500px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .conteiner2{
+            flex-direction: column;
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        body{
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex order</h1>
+    <!--Com o order, podemos alterar a ordem de exibição seguida pelo html, que no caso é sequêncial.
+    Sempre do menor para o maior-->
+    <h2>flex-order / flex: 1;</h2>
+    <section class="conteiner">
+        <div class="item order1">1</div>
+        <div class="item order2">2</div>
+        <div class="item order3">3</div>
+        <div class="item order4">4</div>
+        <div class="item order5">5</div>
+    </section>
+
+    <h2>flex-order / column;</h2>
+    <section class="conteiner conteiner2">
+        <div class="item order1">1</div>
+        <div class="item order2">2</div>
+        <div class="item order3">3</div>
+        <div class="item order4">4</div>
+        <div class="item order5">5</div>
+    </section>
+</body>
+</html>
