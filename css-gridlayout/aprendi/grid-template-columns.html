@@ -23,9 +23,14 @@
             grid-template-columns: repeat( 3, 1fr);
         }
 
+        .template-columns-autofit{
+            grid-template-columns: repeat( auto-fit, 100px);
+            max-width: 615px !important;
+        }
+
         .gridConteiner{
             display: grid;
-            width: 400px;
+            max-width: 400px;
             margin: 15px auto;
             border: 1px solid rgb(82, 82, 82);
             background-color: white;
@@ -34,8 +39,8 @@
         
         .item{
             background-color: tomato;
-            font-size: 13pt;
             margin: 5px;
+            padding: 5px 0px;
             text-align: center;
         }
         
@@ -100,6 +105,17 @@
     <h2>grid-template-columns: repeat(2, 1fr)</h2>
     <!--Utilizando do repeat, pode-se criar várias colunas sem precisar estar escrevendo, basta colocar qauntas quer e a proporção-->
     <section class="gridConteiner template-columns-repeat">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
+    </section>
+
+    <h2>grid-template-columns: repeat(auto-fit, 100px)</h2>
+    <!--Usando do auto-fit, dizemos pro grid pra ele criar o maximo de colunas que der no conteiner, com o tamanho desejado. Quanto maior o tamanho do conteiner, mais colunas serão criadas de acordo com o conteúdo.-->
+    <section class="gridConteiner template-columns-autofit">
         <div class="item">ITEM 1</div>
         <div class="item">ITEM 2</div>
         <div class="item">ITEM 3</div>
