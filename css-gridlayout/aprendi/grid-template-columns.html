@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        
+        .template-columns{
+            grid-template-columns: 200px 200px;
+        }
+
+        .template-columns-fr{
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .gridConteiner{
+            display: grid;
+            width: 500px;
+            margin: 15px auto;
+            border: 1px solid rgb(82, 82, 82);
+            background-color: white;
+            padding: 5px;
+        }
+        
+        .item{
+            background-color: tomato;
+            font-size: 13pt;
+            margin: 5px;
+            text-align: center;
+        }
+        
+        h2{
+            font-size: 1.5em;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            max-width: 700px;
+            margin: 50px auto;
+            font-family: monospace;
+            text-align: center;
+            background-color: rgb(240, 240, 240);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Grid Template columns</h1>
+    <!--Com ele, definimos quantas colunas o grid irá ter.-->
+
+    <h2>grid-template-columns: 200px 200px</h2>
+    <!--Usando valores em px, a margin e o conteúdo vão ser ignorados.-->
+    <section class="gridConteiner template-columns">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+    </section>
+
+    <h2>grid-template-columns: 1fr 2fr</h2>
+    <!--fr é uma valor fracional, ou seja, se temos 1fr e 2fr, a segunda vai ser 2x maior que a primeira. O conteúdo será respeitado.-->
+    <section class="gridConteiner template-columns-fr">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+    </section>
+</body>
+</html>
