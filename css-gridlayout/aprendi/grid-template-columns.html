@@ -15,9 +15,17 @@
             grid-template-columns: 1fr 2fr;
         }
 
+        .template-columns-minmax{
+            grid-template-columns: minmax( 100px, 2fr) 1fr 1fr;
+        }
+
+        .template-columns-repeat{
+            grid-template-columns: repeat( 3, 1fr);
+        }
+
         .gridConteiner{
             display: grid;
-            width: 500px;
+            width: 400px;
             margin: 15px auto;
             border: 1px solid rgb(82, 82, 82);
             background-color: white;
@@ -32,7 +40,8 @@
         }
         
         h2{
-            font-size: 1.5em;
+            font-size: 1.3em;
+            color: rgb(51, 19, 54);
         }
 
         h1{
@@ -75,6 +84,28 @@
         <div class="item">ITEM 2</div>
         <div class="item">ITEM 3</div>
         <div class="item">ITEM 4</div>
+    </section>
+
+    <h2>grid-template-columns: minmax( 100px, 2fr) 1fr 1fr</h2>
+    <!--Usando o minmax, defini-se um tamanho minimo e maximo para uma coluna-->
+    <section class="gridConteiner template-columns-minmax">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
+    </section>
+
+    <h2>grid-template-columns: repeat(2, 1fr)</h2>
+    <!--Utilizando do repeat, pode-se criar várias colunas sem precisar estar escrevendo, basta colocar qauntas quer e a proporção-->
+    <section class="gridConteiner template-columns-repeat">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
     </section>
 </body>
 </html>
