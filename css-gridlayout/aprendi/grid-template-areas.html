@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+
+        .grid-template-areas{
+            grid-template-areas: 
+            'logo nav nav'
+            'sidbar cont anun'
+            'sidbar cont anun'
+            'sidbar footer footer';
+        }
+
+        .logo{
+            grid-area: logo;
+        }
+
+        .nav{
+            grid-area: nav;
+        }
+
+        .content{
+            grid-area: cont;
+        }
+
+        .footer{
+            grid-area: footer;
+        }
+
+        .anuncios{
+            grid-area: anun;
+        }
+
+        .sidebar{
+            grid-area: sidbar;
+        }
+        
+        .gridConteiner{
+            display: grid;
+            max-width: 400px;
+            margin: 0px auto;
+            border: 1px solid rgb(82, 82, 82);
+        }
+        
+        .item{
+            background-color: tomato;
+            font-size: 12pt;
+            margin: 5px;
+            text-align: center;
+        }
+        
+        h2{
+            font-size: 1.9em;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            max-width: 700px;
+            margin: 50px auto;
+            font-family: monospace;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>grid-template-areas</h2>
+    <section class="gridConteiner grid-template-areas">
+        <div class="item logo">Logo</div>
+        <div class="item nav">Nav</div>
+        <div class="item sidebar">SideBar</div>
+        <div class="item content">content TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE TESTE</div>
+        <div class="item footer">footer</div>
+        <div class="item anuncios">Anuncios</div>
+    </section>
+</body>
+</html>
