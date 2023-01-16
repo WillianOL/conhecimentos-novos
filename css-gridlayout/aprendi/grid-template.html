@@ -7,12 +7,13 @@
     <title>Grid Layout</title>
     <style>
 
-        .grid-template-areas{
-            grid-template-areas: 
-            'logo nav nav'
-            'sidbar cont anun'
-            'sidbar cont anun'
-            'sidbar footer footer';
+        .grid-template{
+            grid-template: 
+            'logo nav nav' 50px
+            'sidbar cont anun' 250px
+            'sidbar footer footer' 50px / 100px 2fr 100px;
+            gap: 5px;
+            padding: 5px;
         }
 
         .logo{
@@ -44,12 +45,13 @@
             max-width: 400px;
             margin: 0px auto;
             border: 1px solid rgb(82, 82, 82);
+            
         }
         
         .item{
             background-color: tomato;
             font-size: 12pt;
-            margin: 5px;
+            
             text-align: center;
             padding: 10px;
         }
@@ -74,9 +76,9 @@
     </style>
 </head>
 <body>
-    <h2>grid-template-areas</h2>
-    <!--Usando, podemos definir onde cada item irá ficar na grid. Definindo um nome no grid-area de cada item. E organizando eles depois com o grid-template-aras.-->
-    <section class="gridConteiner grid-template-areas">
+    <h2>grid-template</h2>
+    <!--Atalho para colocar área, linha e coluna no mesmo elemento css-->
+    <section class="gridConteiner grid-template">
         <div class="item logo">Logo</div>
         <div class="item nav">Nav</div>
         <div class="item sidebar">SideBar</div>
