@@ -8,41 +8,41 @@
     <style>
 
         .start{
-            justify-content: flex-start;
+            align-content: flex-start;
         }
         .end{
-            justify-content: flex-end;
+            align-content: flex-end;
         }
 
         .center{
-            justify-content: center;
+            align-content: center;
         }
 
         .space-around{
-            justify-content: space-around;
+            align-content: space-around;
         }
 
         .space-between{
-            justify-content: space-between;
+            align-content: space-between;
         }
 
         .space-evenly{
-            justify-content: space-evenly;
+            align-content: space-evenly;
         }
 
         .gridConteiner{
             display: grid;
-            max-width: 600px;
+            max-width: 500px;
+            height: 400px;
             margin: 20px auto;
             border: 1px solid rgb(82, 82, 82);
         }
 
         .grid-template{
             grid-template: 
-            'logo nav nav' 50px 
-            'sidbar cont anun' 200px
-            'sidbar footer footer' 50px
-            / 100px 200px 100px;
+            'logo nav nav'
+            'sidbar cont anun'
+            'sidbar footer footer'
         }
 
         .logo{
@@ -97,7 +97,7 @@
     </style>
 </head>
 <body>
-    <h2>justify-content: start;</h2>
+    <h2>align-content: start;</h2>
     <section class="gridConteiner grid-template start">
         <div class="item logo">Logo</div>
         <div class="item nav">Nav</div>
@@ -107,7 +107,7 @@
         <div class="item anuncios">Anuncios</div>
     </section>
 
-    <h2>justify-content: end;</h2>
+    <h2>align-content: end;</h2>
     <section class="gridConteiner grid-template end">
         <div class="item logo">Logo</div>
         <div class="item nav">Nav</div>
@@ -117,7 +117,7 @@
         <div class="item anuncios">Anuncios</div>
     </section>
 
-    <h2>justify-content: center;</h2>
+    <h2>align-content: center;</h2>
     <section class="gridConteiner grid-template center">
         <div class="item logo">Logo</div>
         <div class="item nav">Nav</div>
@@ -127,7 +127,7 @@
         <div class="item anuncios">Anuncios</div>
     </section>
 
-    <h2>justify-content: space-around;</h2>
+    <h2>align-content: space-around;</h2>
     <section class="gridConteiner grid-template space-around">
         <div class="item logo">Logo</div>
         <div class="item nav">Nav</div>
@@ -137,7 +137,7 @@
         <div class="item anuncios">Anuncios</div>
     </section>
 
-    <h2>justify-content: space-between;</h2>
+    <h2>align-content: space-between;</h2>
     <section class="gridConteiner grid-template space-between">
         <div class="item logo">Logo</div>
         <div class="item nav">Nav</div>
@@ -147,7 +147,7 @@
         <div class="item anuncios">Anuncios</div>
     </section>
 
-    <h2>justify-content: space-evenly;</h2>
+    <h2>align-content: space-evenly;</h2>
     <section class="gridConteiner grid-template space-evenly">
         <div class="item logo">Logo</div>
         <div class="item nav">Nav</div>
