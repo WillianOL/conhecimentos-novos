@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+
+        .item1{
+            grid-row: 4;
+        }
+
+        .item3{
+            grid-row: 2;
+        }
+        
+        .grid{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .gridConteiner{
+            display: grid;
+            width: 500px;
+            margin: 0px auto;
+            border: 1px solid rgb(82, 82, 82);
+            margin-bottom: 20px;
+        }
+        
+        .item{
+            background-color: tomato;
+            font-size: 12pt;
+            margin: 5px;
+            text-align: center;
+            padding: 5px;
+        }
+        
+        h2{
+            font-size: 1.9em;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            max-width: 700px;
+            margin: 50px auto;
+            font-family: monospace;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>grid-row</h2>
+    <!--Com ele, organizamos os grid itens em linhas da forma desejavel-->
+    <section class="gridConteiner grid">
+        <div class="item item1">ITEM 1</div>
+        <div class="item item2">ITEM 2</div>
+        <div class="item item3">ITEM 3</div>
+        <div class="item item4">ITEM 4</div>
+        <div class="item item5">ITEM 5</div>
+        <div class="item item6">ITEM 6</div>
+        <div class="item item7">ITEM 7</div>
+    </section>
+
+    <h2>grid-row: 1/-1</h2>
+    <section class="gridConteiner grid">
+        <div class="item item01">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
+        <div class="item item07">ITEM 7</div>
+    </section>
+
+    <h2>grid-row: span;</h2>
+    <section class="gridConteiner grid">
+        <div class="item span1">ITEM 1</div>
+        <div class="item span2">ITEM 2</div>
+        <div class="item span3">ITEM 3</div>
+        <div class="item span4">ITEM 4</div>
+        <div class="item span5">ITEM 5</div>
+        <div class="item span6">ITEM 6</div>
+        <div class="item span7">ITEM 7</div>
+    </section>
+
+    <h2>grid-column: outros;</h2>
+    <section class="gridConteiner grid">
+        <div class="item item001">ITEM 1</div>
+        <div class="item item002">ITEM 2</div>
+        <div class="item item003">ITEM 3</div>
+        <div class="item item004">ITEM 4</div>
+        <div class="item item005">ITEM 5</div>
+        <div class="item item006">ITEM 6</div>
+        <div class="item item007">ITEM 7</div>
+    </section>
+</body>
+</html>
