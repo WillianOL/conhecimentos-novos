@@ -1,5 +1,19 @@
 .quadrado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 150px;
-    background-color: rgb(9, 69, 104);
+    background-color: rgb(14, 160, 128);
+    color: white;
+}
+
+.transition_property_duration{
+    transition-property: background-color, border-radius; /* Escolhe quais propriedade vai passar pela transição */
+    transition-duration: .5s; /* Duração da transição */
+}
+
+.transition_property_duration:hover{
+    border-radius: 50%;
+    background-color: rgb(241, 14, 14);
 }
