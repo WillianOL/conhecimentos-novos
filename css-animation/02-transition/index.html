@@ -18,9 +18,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 30px;
         }
 
         article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
         }
 
@@ -28,7 +32,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px solid rgb(215, 12, 241);
+            border: 2px solid rgb(33, 16, 109);
             height: 250px;
             width: 250px;
             border-radius: 10px;
@@ -40,7 +44,7 @@
     <section class="conteiner">
 
         <article>
-            <h2>Transition: property</h2>
+            <h2>Transition: property / duration</h2>
             <div class="box">
                 <div class="quadrado transition_property_duration">
                     <p>TEXTO</p>
@@ -48,6 +52,26 @@
             </div>
         </article>
 
+        <article>
+            <h2>Transition: delay</h2>
+            <div class="box">
+                <div class="quadrado transition_property_duration transition-delay">
+                    <p>TEXTO</p>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="conteiner">
+        <article>
+            <h2>Transition: time-function</h2>
+            <div class="box">
+                <div class="quadrado transition_property_duration time-function">
+                    <p>TEXTO</p>
+                </div>
+            </div>
+        </article>
     </section>
 
 </body>
