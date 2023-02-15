@@ -14,3 +14,11 @@
 .transform_skew{
     transform: skew(-20deg); /* Da uma inclinada no elemento */
 }
+
+.transform_combinado{
+    transition: 1.5s ease;
+}
+
+.transform_hover:hover{
+    transform: translateY(-40px) scale(1.5) rotate(1turn);
+}

@@ -15,6 +15,8 @@
 
         body{
             display: flex;
+            align-items: center;
+            flex-direction: column;
             text-align: center;
             gap: 20px;
             height: 100vh;
@@ -41,43 +43,58 @@
             height: 200px;
             margin: 10px auto;
         }
+
+        .main1{
+            display: flex;
+            gap: 20px;
+        }
     </style>
 </head>
 <body>
-    <section>
-        <h2>Transform: translate</h2>
-        <div class="conteiner">
-            <div class="box transform_translate">
-                <p>ELEMENTO</p>
+    <div class="main1">
+        <section>
+            <h2>Transform: translate</h2>
+            <div class="conteiner">
+                <div class="box transform_translate">
+                    <p>ELEMENTO</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section>
+            <h2>Transform: scale</h2>
+            <div class="conteiner">
+                <div class="box transform_scale">
+                    <p>ELEMENTO</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Transform: rotate</h2>
+            <div class="conteiner">
+                <div class="box transform_rotate">
+                    <p>ELEMENTO</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Transform: skew</h2>
+            <div class="conteiner">
+                <div class="box transform_skew">
+                    <p>ELEMENTO</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <section>
-        <h2>Transform: scale</h2>
-        <div class="conteiner">
-            <div class="box transform_scale">
-                <p>ELEMENTO</p>
+    <div class="main2">
+        <section>
+            <h2>Combinação - hover</h2>
+            <div class="conteiner">
+                <div class="box transform_combinado transform_hover">
+                    <p>ELEMENTO</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Transform: rotate</h2>
-        <div class="conteiner">
-            <div class="box transform_rotate">
-                <p>ELEMENTO</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Transform: skew</h2>
-        <div class="conteiner">
-            <div class="box transform_skew">
-                <p>ELEMENTO</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 </html>
