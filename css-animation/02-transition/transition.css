@@ -10,7 +10,7 @@
 
 .transition_property_duration{
     transition-property: background-color, border-radius; /* Escolhe quais propriedade vai passar pela transição */
-    transition-duration: .5s; /* Duração da transição */
+    transition-duration: .5s, 1s; /* Duração da transição */
 }
 
 .transition_property_duration:hover{
