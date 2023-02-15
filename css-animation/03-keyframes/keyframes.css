@@ -27,12 +27,19 @@ body{
 }
 
 .objeto{
-    animation: voar 1s ease;
+    animation: voar 1s;
 }
 
 @keyframes voar{
-    to{
+    0%{
+        transform: translate(0, 0);
+    }
+
+    50%{
+        transform: translate(200%, -200px);
+    }
+
+    100%{
         transform: translate(calc(100vw - 220px));
-        height: 200px;
     }
 }
