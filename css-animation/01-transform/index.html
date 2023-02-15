@@ -14,6 +14,7 @@
         }
 
         body{
+            display: flex;
             text-align: center;
             gap: 20px;
             height: 100vh;
@@ -34,6 +35,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             border: 2px solid red;
             width: 200px;
             height: 200px;
@@ -42,32 +44,40 @@
     </style>
 </head>
 <body>
-    <h2>Transform: translate</h2>
-    <div class="conteiner">
-        <div class="box transform_translate">
-            <p>ELEMENTO</p>
-        </div> 
-    </div>
-
-    <h2>Transform: scale</h2>
-    <div class="conteiner">
-        <div class="box transform_scale">
-            <p>ELEMENTO</p>
+    <section>
+        <h2>Transform: translate</h2>
+        <div class="conteiner">
+            <div class="box transform_translate">
+                <p>ELEMENTO</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <h2>Transform: rotate</h2>
-    <div class="conteiner">
-        <div class="box transform_rotate">
-            <p>ELEMENTO</p>
+    <section>
+        <h2>Transform: scale</h2>
+        <div class="conteiner">
+            <div class="box transform_scale">
+                <p>ELEMENTO</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <h2>Transform: skew</h2>
-    <div class="conteiner">
-        <div class="box transform_skew">
-            <p>ELEMENTO</p>
+    <section>
+        <h2>Transform: rotate</h2>
+        <div class="conteiner">
+            <div class="box transform_rotate">
+                <p>ELEMENTO</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <h2>Transform: skew</h2>
+        <div class="conteiner">
+            <div class="box transform_skew">
+                <p>ELEMENTO</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
