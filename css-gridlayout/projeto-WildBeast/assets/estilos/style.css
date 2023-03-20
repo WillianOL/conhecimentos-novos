@@ -16,6 +16,8 @@ a{
 }
 
 img{
+    display: block;
+    border-radius: 10px;
     max-width: 100%;
 }
 
@@ -92,12 +94,39 @@ img{
 
 .conteiner{
     grid-area: conteudo;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.coluna-expandida{
+    grid-column: 1 / -1;
+}
+
+.img-rowExpand{
+    grid-row: span 2;
+    align-self: end;
 }
 
 .anuncios{
     grid-area: anuncio;
+    background-color: #fafbfc;
+    display: grid;
+    align-content: flex-start;
+    padding: 30px;
+    gap: 30px;
 }
 
 .footer{
     grid-area: footer;
+    background: linear-gradient(to right, #8844ee, #b07dfb);
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
