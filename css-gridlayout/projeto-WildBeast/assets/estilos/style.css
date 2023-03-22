@@ -34,6 +34,31 @@ img{
     ;
 }
 
+@media (max-width: 1200px){
+    .ConteinerPrincipal{
+        grid-template-columns: minmax(160px, 1fr) 3fr;
+        grid-template-areas: 
+        'header header'
+        'sidnav conteudo'
+        'sidnav anuncio'
+        'footer footer'
+        ;
+    }
+}
+
+@media (max-width: 760px){
+    .ConteinerPrincipal{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        'header'
+        'sidnav'
+        'conteudo'
+        'anuncio'
+        'footer'
+        ;
+    }
+}
+
 /* Header */
 .header{
     display: grid;
@@ -68,6 +93,24 @@ img{
     background-color: rgba(0, 0, 0, .5);
 }
 
+@media (max-width: 760px){
+    .header{
+        grid-template-columns: auto;
+    }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    .header nav a{
+        font-size: 1em;
+    }
+
+    .header ul{
+        gap: 10px;
+    }
+}
+
 /* SideNav */
 
 .sidenav{
@@ -90,6 +133,46 @@ img{
 
 .sidenav ul li a:hover{
     background-color: #b07dfb;
+}
+
+@media (max-width: 760px){
+    .sidenav ul{
+        display: flex;
+    }
+
+    .sidenav ul li{
+        flex: 1 0 100px;
+    }
+
+    .sidenav::after{
+        content: '→';
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        color: rgba(0, 0, 0, .3);
+        animation: arrowAnimation .5s ease-in infinite alternate;
+        font-size: 1.5em;
+    }
+
+    .sidenav{
+        overflow-x: scroll;
+        padding: 0 30px;
+        position: relative;
+    }
+
+    .sidenav ul li a{
+        margin: 30px 10px;
+    }
+}
+
+@keyframes arrowAnimation{
+    from{
+        right: 30px;
+    }
+
+    to{
+        right: 20px;
+    }
 }
 
 .conteiner{
