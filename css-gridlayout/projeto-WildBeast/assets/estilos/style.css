@@ -18,7 +18,7 @@ a{
 img{
     display: block;
     border-radius: 10px;
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -175,6 +175,7 @@ img{
     }
 }
 
+/* Content */
 .conteiner{
     grid-area: conteudo;
     max-width: 900px;
@@ -183,6 +184,12 @@ img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+}
+
+@media (max-width: 600px){
+    .conteiner{
+        grid-template-columns: auto;
+    }
 }
 
 .coluna-expandida{
@@ -293,6 +300,7 @@ p{
     align-content: flex-start;
     padding: 30px;
     gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .footer{
